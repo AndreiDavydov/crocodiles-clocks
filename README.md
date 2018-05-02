@@ -30,8 +30,8 @@ The core idea was to implement a convolutional neural network, mused by Alexnet 
 The model was saved in "model_state" file and can be reloaded from it by simple pyTorch functions (".load_state_dict(torch.load('model_state')...").
 
 Afterwards, accuracies on each dataset were calculated:
-- train set - $91.8 %$
-- validation set - $84.4 %$
-- test set - $87.2 %$
+- train set - **91.8 %**
+- validation set - **84.4 %**
+- test set - **87.2 %**
 
 ### Extraction of disputable images

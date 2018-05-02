@@ -34,4 +34,6 @@ Afterwards, accuracies on each dataset were calculated:
 - validation set - **84.4 %**
 - test set - **87.2 %**
 
-### Extraction of disputable images
+it should be noted that these results were got with no tricks with data augmentation or CNN structure development. Certainly, results would be much better if more images were in the train set. Anyway, even such straightforward approach with so simple CNN structure show nice results.
+
+### 2. Extraction of disputable images

@@ -1,6 +1,6 @@
 # crocodiles-clocks
 
-## My name is Andrey Davydov and here is my project report for Skoltech summer internship in Samsung. The project is devoted to the research based on the dataset with images of clocks and crocodiles. 
+## My name is Andrei Davydov and here is my project report for Skoltech summer internship in Samsung. The project is devoted to the research based on the dataset with images of clocks and crocodiles. 
 
 The project consists of three parts: 
   - binary **classification** of images (1), 

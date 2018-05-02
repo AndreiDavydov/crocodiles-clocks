@@ -26,3 +26,8 @@ The core idea was to implement a convolutional neural network, mused by Alexnet 
 <p align="center">
   <img width="1000px" src="images4report/loss_acc.png">
 </p>
+
+The model was saved in "model_state" file and can be reloaded from it by simple pyTorch functions (".load_state_dict(torch.load('model_state')...").
+
+Afterwards, all accuracies were calculated:
+- train set - (0.918, 0.844, 0.872)

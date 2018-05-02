@@ -19,4 +19,6 @@ First of all, a proper preprocesssing must be achieved. Each image from folders 
   <img width="1000px" src="images4report/check.png">
 </p>
 
+#### 1.1. Binary classification with CNN
 
+The core idea was to implement a convolutional neural network, mused by Alexnet and others, as simple as possible due to quite small dataset of quite small images (32x32 size).It consists

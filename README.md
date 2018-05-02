@@ -13,10 +13,10 @@ Let us talk about each part and my achievements on them.
 
 #### 1.0. Preprocessing
 
-First of all, a proper preprocesssing must be achieved. Each image from folders must have its true label and all images must be stacked together in the whole array. Then this array must be splitted in the Train, Validation and Test sets for the following classification. All calculations are provided in "preprocessing.py" module, checking whether it works or not is provided below:
+First of all, a proper preprocesssing must be achieved. Each image from folders must have its true label and all images must be stacked together in the whole array. Then this array must be splitted in the Train, Validation and Test sets for the following classification. All calculations are provided in "preprocessing.py" module, the check result (whether it works properly or not) is provided below:
 
 <p align="center">
-  <img width="720px" src="images4report/check.png">
+  <img width="1000px" src="images4report/check.png">
 </p>
 
 

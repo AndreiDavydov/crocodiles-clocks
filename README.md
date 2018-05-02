@@ -21,4 +21,8 @@ First of all, a proper preprocesssing must be achieved. Each image from folders 
 
 #### 1.1. Binary classification with CNN
 
-The core idea was to implement a convolutional neural network, mused by Alexnet and others, as simple as possible due to a relatively small dataset (500 for each class) of relatively small images (32x32 pixels).It consists of three blocks of **Conv2d+MaxPool2d+ReLU** (such composition was shown prominent results in image classification tasks, especially proper feature extraction, in the **AlexNet** for instance). Then these blocks are flattened and followed by two **dense** layers with nonlinearities. The last layer is **sigmoid** function, which eventually learns to give the probabilities of each image be labelled to '0'th or '1'th class. A **Binary Cross-Entropy** loss - a pretty common criterion for the classification optimization procedure was used.
+The core idea was to implement a convolutional neural network, mused by Alexnet and others, as simple as possible due to a relatively small dataset (500 for each class) of relatively small images (32x32 pixels).It consists of three blocks of **Conv2d+MaxPool2d+ReLU** (such composition was shown prominent results in image classification tasks, especially proper feature extraction, in the **AlexNet** for instance). Then these blocks are flattened and followed by two **dense** layers with nonlinearities. The last layer is **sigmoid** function, which eventually learns to give the probabilities of each image be labelled to '0'th or '1'th class. A **Binary Cross-Entropy** loss - a pretty common criterion for the classification optimization procedure was used with the **Adam** optimizer. All the code for model implementation and learning is provided in the "model_classification.py" module. A visualization of the training procedure is provided below:
+
+<p align="center">
+  <img width="1000px" src="images4report/loss_and_acc.png">
+</p>

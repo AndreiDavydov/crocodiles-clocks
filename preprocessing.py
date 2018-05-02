@@ -24,7 +24,18 @@ def Preprocessing():
     X, y = X[idx], y[idx]
     return X, y
 
-def check_preprocessing(X, y):
+def get_crocs():
+    croclist = [file for file in os.listdir('clocks_crocodiles/crocodile')]
+    crocodiles_data = np.array([np.array(imread('clocks_crocodiles/crocodile/'+file)/255) for file in croclist ])
+    return crocodiles_data
+
+def get_clocks():
+    clocklist = [file for file in os.listdir('clocks_crocodiles/clock')]
+    clocks_data     = np.array([np.array(imread('clocks_crocodiles/clock/'    +file)/255) for file in clocklist])
+    return clocks_data
+
+def check_preprocessing(X, y, seed=0):
+    np.random.seed(seed)
     fig, ax = plt.subplots(1,5,figsize=(20,10))
     for i in range(5):
         idx = np.random.randint(0,1000)

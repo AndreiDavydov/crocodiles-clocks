@@ -7,7 +7,10 @@ The project consists of three parts:
   - **extraction** of the images that are debateable on the issue, which label must be assigned to (2),
   - **generation** of new images that would hardly correspond to one of two classes (3).
   
-Let us talk about each part and my achievements on them.
+Let us talk about each part and my achievements on them. 
+
+*All implementation is written on the Python (3.6) using ordinary libraries Numpy (1.14.0), Matplotlib (2.1.2), Scikit (0.19.1
+) and also the library specifically developed for comfortable neural network implementation - pyTorch (0.3.0.). All NN-based calculations were performed with CUDA (9.0) driver on the GPU Nvidia GeForce GTX 950m for faster evaluation.*
 
 ### 1. Classification
 

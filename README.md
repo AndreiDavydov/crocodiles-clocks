@@ -4,7 +4,7 @@
 
 The project consists of three parts: 
   - binary **classification** of images (1), 
-  - **extraction** of the images that are debateable, which label must be assigned to (2),
+  - **extraction** of the images that are debateable on the issue, which label must be assigned to (2),
   - **generation** of new images that would hardly correspond to one of two classes (3).
   
 Let us talk about each part and my achievements on them.

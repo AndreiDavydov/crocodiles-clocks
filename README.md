@@ -3,7 +3,7 @@
 My name is Andrey Davydov and here is my project. 
 
 <p align="center">
-  <img alt="CSS Blocks" width="480px" src="http://css-blocks.com/static/media/wordmark-animated.012177e4.svg" />
+  <img alt="CSS Blocks" width="480px" src="images4report/loss_accs.png" />
 </p>
 <h2 align="center">Blazing fast CSS for your Design Systems and App Components </h2>
 

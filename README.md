@@ -5,7 +5,7 @@
 The project consists of three parts: 
   - binary **classification** of images (1), 
   - **extraction** of the images that are debateable, which label must be assigned to (2),
-  - **generation** of new images that would hardly correspond to one of two classes.
+  - **generation** of new images that would hardly correspond to one of two classes (3).
 
 ### 0. Preprocessing
 

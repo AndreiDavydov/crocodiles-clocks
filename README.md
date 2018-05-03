@@ -92,3 +92,30 @@ Here are the results:
 
 From feature point of view, obtained images look more discussable than ones from the previous approach. So, we may argue at some extent that inner representations retrieval and following comparison on them is much smarter approach than a discussion based simply on wrong predictions.
 
+### 3. Generation
+
+There are not so many common approaches, which allow to generate images: Autoencoders (AE), Variational Autoencoders (VAE), Generative Adversarial Networks (GAN). I was trying to use the simplest AE.
+
+The idea was to learn AE, which would reproduce clocks and crocodiles, in other words, which encodes images in some latent space and then successfully decodes it back into high dimensionality. Encoding Crocodiles and Clocks independently, one would get average latent Croc and Clock, then average these averages together and decode. Then, we would get a mixture of a crocodile and clock. The next step would be to implement VAE to be able to sample from the latent space and generate different images from the same latent parameters.
+
+However, easy to say - hard to implement. Here are the results of my AE work:
+
+- some nice reproductions:
+
+<p align="center">
+  <img width="1000px" src="images4report/1_3_clock_good.png">
+</p>
+
+<p align="center">
+  <img width="1000px" src="images4report/1_3_croc_good.png">
+</p>
+
+- some awful reproductions:
+
+<p align="center">
+  <img width="1000px" src="images4report/1_3_clock_bad.png">
+</p>
+
+<p align="center">
+  <img width="1000px" src="images4report/1_3_croc_bad.png">
+</p>

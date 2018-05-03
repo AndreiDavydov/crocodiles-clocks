@@ -96,7 +96,7 @@ From feature point of view, obtained images look more discussable than ones from
 
 ### 3. Generation
 
-There are not so many common approaches, which allow to generate images: Autoencoders (AE), Variational Autoencoders (VAE), Generative Adversarial Networks (GAN). I was trying to use the simplest AE.
+There are not so many common approaches, which allow to generate images: Autoencoders (AE), Variational Autoencoders (VAE), Generative Adversarial Networks (GAN). I have tried to use the simplest AE.
 
 All the code lies in "model_generation.py" module.
 

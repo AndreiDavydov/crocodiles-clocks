@@ -48,19 +48,20 @@ All the code for this part is provided in the "get_imgs.py" module.
 
 At first glance, all images, which were labelled wrong, are such hardly recognized images. This idea is quite stupid, because too many reasons may lead to such wrong predictions. starting with overfitting and ending with banal stochasticity. Anyway, all such "disputable" images have been collected and shown:
 
-- Train set ():
+- Train set (number of badly recognized images: 41 out of 500):
+
 
 <p align="center">
   <img width="1000px" src="images4report/1st_approach_train.png">
 </p>
 
-- Validation set ():
+- Validation set (number of badly recognized images: 39 out of 250):
 
 <p align="center">
   <img width="1000px" src="images4report/1st_approach_val.png">
 </p>
 
-- Test set ():
+- Test set (number of badly recognized images: 32 out of 250):
 
 <p align="center">
   <img width="1000px" src="images4report/1st_approach_test.png">
@@ -83,3 +84,6 @@ Such images should be considered as "debateable" in terms provided above.
 
 Here are the results:
 
+<p align="center">
+  <img width="1000px" src="images4report/2nd_approach_tol_0_2.png">
+</p>

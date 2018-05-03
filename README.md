@@ -100,7 +100,7 @@ There are not so many common approaches, which allow to generate images: Autoenc
 
 All the code lies in "model_generation.py" module.
 
-The idea was to learn AE, which would reproduce clocks and crocodiles, in other words, which encodes images in some latent space and then successfully decodes it back into high dimensionality. Encoding Crocodiles and Clocks independently, one would get average latent Croc and Clock, then average these averages together and decode. Then, we would get a mixture of a crocodile and clock. The next step would be to implement VAE to be able to sample from the latent space and generate different images from the same latent parameters.
+The idea was to learn AE, which would reproduce clocks and crocodiles, in other words, which encodes images in some latent space and then successfully decodes it back into high dimensionality. Encoding Crocodiles and Clocks independently, one would get average latent Croc and Clock, then average these averages together and decode. Then, we would get a mixture of a crocodile and clock in the image domain. The next step would be to implement VAE to be able to sample from the latent space and generate different images from the same latent parameters.
 
 However, easy to say - hard to implement. Here are the results of my AE work (loss decays are also provided, all images were got in different training sessions):
 

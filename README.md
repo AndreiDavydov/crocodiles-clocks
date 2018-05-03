@@ -87,3 +87,6 @@ Here are the results:
 <p align="center">
   <img width="1000px" src="images4report/2nd_approach_tol_0_2.png">
 </p>
+
+From feature point of view, obtained images look more discussable than ones from the previous approach. So, we may argue at some extent that inner representations retrieval and following comparison on them is much smarter approach than a discussion based simply on wrong predictions.
+

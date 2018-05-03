@@ -11,8 +11,7 @@ The project consists of three parts:
   
 Let us talk about each part and my achievements on them. 
 
-*All implementation is written on the Python (3.6) using ordinary libraries Numpy (1.14.0), Matplotlib (2.1.2), Scikit (0.19.1
-) and also the library specifically developed for comfortable neural network implementation - pyTorch (0.3.0.). All NN-based calculations were performed with CUDA (9.0) driver on the GPU Nvidia GeForce GTX 950m for faster evaluation.*
+*All implementation is written on the Python (3.6) using ordinary libraries: Numpy (1.14.0), Matplotlib (2.1.2), Scikit (0.19.1). Also the library specifically developed for comfortable neural network implementation was used - pyTorch (0.3.0.). All NN-based calculations were performed with CUDA (9.0) driver on the GPU Nvidia GeForce GTX 950m for faster evaluation.*
 
 ### 1. Classification
 
@@ -42,3 +41,25 @@ Afterwards, accuracies on each dataset were calculated:
 it should be noted that these results were got without any tricks with data augmentation or CNN structure development. Certainly, results would be much better if more images were in the train set or some efficient layers (as BatchNorm or Dropout) were used. Anyway, even such straightforward approach with so simple CNN structure have shown pretty nice results.
 
 ### 2. Extraction of disputable images
+
+#### 2.1. 1st approach (Naive)
+
+At first glance, all images, which were labelled wrong, are such hardly recognized images. This idea is quite stupid, because too many reasons may lead to such wrong predictions. starting with overfitting and ending with banal stochasticity. Anyway, all such "disputable" images have been collected and shown:
+
+- Train set ():
+
+<p align="center">
+  <img width="1000px" src="images4report/1st_approach_train.png">
+</p>
+
+- Validation set ():
+
+<p align="center">
+  <img width="1000px" src="images4report/1st_approach_val.png">
+</p>
+
+- Test set ():
+
+<p align="center">
+  <img width="1000px" src="images4report/1st_approach_test.png">
+</p>

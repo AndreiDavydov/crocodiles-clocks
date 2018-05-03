@@ -11,7 +11,9 @@ The project consists of three parts:
   
 Let us talk about each part and my achievements on them. 
 
-*All implementation is written on the Python (3.6) using ordinary libraries: Numpy (1.14.0), Matplotlib (2.1.2), Scikit (0.19.1). Also the library specifically developed for comfortable neural network implementation was used - pyTorch (0.3.0.). All NN-based calculations were performed with CUDA (9.0) driver on the GPU Nvidia GeForce GTX 950m for faster evaluation.*
+*All implementation is written on the Python (3.6) in Jupyter Notebook shell using ordinary libraries: Numpy (1.14.0), Matplotlib (2.1.2), Scikit (0.19.1). Also the library specifically developed for comfortable neural network implementation was used - pyTorch (0.3.0.). All NN-based calculations were performed with CUDA (9.0) driver on the GPU Nvidia GeForce GTX 950m for faster evaluation.*
+
+To reproduce the results, one should run "main.py" file or look into "clocks_crocs.ipynb" file and re-run it. 
 
 ### 1. Classification
 
@@ -96,9 +98,11 @@ From feature point of view, obtained images look more discussable than ones from
 
 There are not so many common approaches, which allow to generate images: Autoencoders (AE), Variational Autoencoders (VAE), Generative Adversarial Networks (GAN). I was trying to use the simplest AE.
 
+All the code lies in "model_generation.py" module.
+
 The idea was to learn AE, which would reproduce clocks and crocodiles, in other words, which encodes images in some latent space and then successfully decodes it back into high dimensionality. Encoding Crocodiles and Clocks independently, one would get average latent Croc and Clock, then average these averages together and decode. Then, we would get a mixture of a crocodile and clock. The next step would be to implement VAE to be able to sample from the latent space and generate different images from the same latent parameters.
 
-However, easy to say - hard to implement. Here are the results of my AE work:
+However, easy to say - hard to implement. Here are the results of my AE work (loss decays are also provided, all images were got in different training sessions):
 
 - some nice reproductions:
 
@@ -119,3 +123,5 @@ However, easy to say - hard to implement. Here are the results of my AE work:
 <p align="center">
   <img width="1000px" src="images4report/1_3_croc_bad.png">
 </p>
+
+In conclusion, there were too little images in the whole dataset to reach good AE performance. And in our case, bad AE would not lead to good reconstruction of some mixture in latent coordinates.If I had enough time, I would have made data augmentation to enhance the training capability, but I am not able to do it now, unfortunately. 

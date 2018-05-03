@@ -1,9 +1,9 @@
-# this library contains auxilliary function for easier representation of badly recognized images, task 1.2
 from preprocessing import *
-from model import *
-def get_wrong_imgs(net_, X, y):
+from model_classification import *
+
+def get_wrong_imgs(net_, X, y, mode='train'):
     '''
-    function searches for badly recognized images.
+    Function searches for badly recognized images.
     It stupidly outputs all images that were labelled in a wrong way.
     '''    
     net_.eval()
@@ -21,6 +21,7 @@ def get_wrong_imgs(net_, X, y):
     
     N = wrong_imgs.shape[0]
     print('number of badly recognized images:', N)
+    print('({} mode)'.format(mode))
     if N > 15:
         N = 10
     n_rows = N//5+1
@@ -35,10 +36,11 @@ def get_wrong_imgs(net_, X, y):
                 ax[i,j].set_yticks([])  
             except IndexError:
                 pass
+    plt.show()
             
 def get_strange_imgs_by_inner(model, X, tol=0.1):
     '''
-    function calculates images lying between classes.
+    Function calculates images lying between classes.
     It takes inner representations of input images (after first dense layer) and searches for farthest ones from classes' centers.
     '''
     X_clocks, X_crocs = swap(get_clocks()), swap(get_crocs())
@@ -68,3 +70,4 @@ def get_strange_imgs_by_inner(model, X, tol=0.1):
                 ax[i,j].set_yticks([])  
             except IndexError:
                 pass
+    plt.show()

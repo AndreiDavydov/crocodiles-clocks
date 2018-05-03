@@ -42,7 +42,9 @@ it should be noted that these results were got without any tricks with data augm
 
 ### 2. Extraction of disputable images
 
-#### 2.1. 1st approach (Naive)
+All the code for this part is provided in the "get_imgs.py" module.
+
+#### 2.1. 1st approach (too naive)
 
 At first glance, all images, which were labelled wrong, are such hardly recognized images. This idea is quite stupid, because too many reasons may lead to such wrong predictions. starting with overfitting and ending with banal stochasticity. Anyway, all such "disputable" images have been collected and shown:
 
@@ -63,3 +65,21 @@ At first glance, all images, which were labelled wrong, are such hardly recogniz
 <p align="center">
   <img width="1000px" src="images4report/1st_approach_test.png">
 </p>
+
+Obviously, the majority of these images cannot be considered as "disputable" or "hard to distinguish" talking about distinguishability between a Clock and a Crocodile. Then, another approach was performed.
+
+#### 2.2. 2nd approach (not so naive)
+
+The motivation to build such NN structure can be told in two sentences: 
+1. We wanted to **extract features** from images by convolutions getting vectors of smaller dimension.
+2. Then learn to project these multidimensional vectors into two regions of the [0,1] interval, closer to '0' or '1'.
+
+So, we may assume that such **inner representations** of our images should be clustered into two parts: the Clock cluster and the Crocodile cluster. The key idea of this approach was:
+- to get such latent vectors for clocks and crocodiles independently
+- find centers of each cluster, by simple averaging
+- decide for each image whether it lies far from each center or not (due to some appointed tolerance)
+
+Such images should be considered as "debateable" in terms provided above.
+
+Here are the results:
+

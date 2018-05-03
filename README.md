@@ -82,6 +82,8 @@ So, we may assume that such **inner representations** of our images should be cl
 
 Such images should be considered as "debateable" in terms provided above.
 
+All calculations have been got by "get_latent" method of "SimpleNet" class and "get_strange_imgs_by_inner" function with the tolerance 0.2.
+
 Here are the results:
 
 <p align="center">
